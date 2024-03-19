@@ -24,6 +24,7 @@ func main() {
 	colors["white"] = "#ffffff"
 	// delete(colors, "red")
 
+	printMap(colors)
 	fmt.Println(colors)
 
 	// p1 := person{firstName: "Alex", lastName: "Anderson", contact: contact{email: "alex@gmail.com", zipCode: 12345}}
@@ -36,6 +37,13 @@ func main() {
 	// fmt.Println(p1)
 
 	// p1.print()
+}
+
+func printMap(m map[string]string) {
+	for key, value := range m {
+		fmt.Println("Key: ", key)
+		fmt.Println("Value: ", value)
+	}
 }
 
 func (c contact) print() {
