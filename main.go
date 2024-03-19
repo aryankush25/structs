@@ -16,10 +16,10 @@ type person struct {
 func main() {
 	p1 := person{firstName: "Alex", lastName: "Anderson", contact: contact{email: "alex@gmail.com", zipCode: 12345}}
 
-	pointerToPerson := &p1
-	pointerToPerson.updateName("Alexis")
+	// pointerToPerson := &p1
+	// pointerToPerson.updateName("Alexis")
 
-	// p1.updateName("Alexis")
+	p1.updateName("Alexis")
 
 	fmt.Println(p1)
 
